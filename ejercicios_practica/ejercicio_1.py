@@ -10,6 +10,9 @@
 # Ejercicios con lambda
 
 
+from numpy import sqrt
+
+
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
@@ -20,6 +23,11 @@ if __name__ == '__main__':
 
     # potencia_2 = lambda x:......
     # pot_3 = potencia_2(3)
+
+    potencia_2 = lambda x: x**2
+    potencia_3 = potencia_2(3)
+    print(potencia_3) 
+
 
     # 2)
     # Utilice la función map para mapear una lambda expression
@@ -36,5 +44,7 @@ if __name__ == '__main__':
     numeros = [1, -5, 4, 3]
 
     # numeros_potencia = list(map....)
+    numeros_potencia = list(map(lambda x: x**2, numeros))
+    print(numeros_potencia)
 
     print("terminamos")
